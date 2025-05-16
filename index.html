@@ -1,99 +1,123 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
-}
-
-header {
-    background-color: #ff4d4d;
-    color: white;
-    text-align: center;
-    padding: 1em;
-}
-
-header h1 {
-    margin: 0;
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin: 0 15px;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-nav ul li a:hover {
-    text-decoration: underline;
-}
-
-main {
-    max-width: 800px;
-    margin: 20px auto;
-    padding: 20px;
-    background-color: white;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-}
-
-h2 {
-    color: #ff4d4d;
-}
-
-form {
-    display: flex;
-    flex-direction: column;
-}
-
-label {
-    margin: 10px 0 5px;
-    font-weight: bold;
-}
-
-input, select, textarea {
-    padding: 8px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    width: 100%;
-    box-sizing: border-box;
-}
-
-button {
-    background-color: #ff4d4d;
-    color: white;
-    padding: 10px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 16px;
-}
-
-button:hover {
-    background-color: #e60000;
-}
-
-.team-img {
-    max-width: 100%;
-    height: auto;
-    margin-top: 20px;
-}
-
-footer {
-    text-align: center;
-    padding: 1em;
-    background-color: #ff4d4d;
-    color: white;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pink Lightning Softball</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #ff69b4;
+            color: white;
+            text-align: center;
+            padding: 1em;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2em;
+        }
+        .logo {
+            max-width: 100px;
+            height: auto;
+            margin: 10px auto;
+            display: block;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+        main {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h2 {
+            color: #ff69b4;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        label {
+            margin: 10px 0 5px;
+            font-weight: bold;
+        }
+        input, select, textarea {
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        button {
+            background-color: #ff69b4;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #e60073;
+        }
+        .team-img {
+            max-width: 100%;
+            height: auto;
+            margin-top: 20px;
+        }
+        footer {
+            text-align: center;
+            padding: 1em;
+            background-color: #ff69b4;
+            color: white;
+            width: 100%;
+        }
+        .section {
+            display: none;
+        }
+        .section.active {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <!-- Placeholder Base64 logo (pink softball) -->
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAACXBIWXMAAAsTAAALEwEAmpwYAAADhklEQVR4nO3dT2sTQRzH8e+5Z6m1qIWgIti2tT6AbS/YiFUsW6ViY2trtS0s/AEi2I5iYaGllZ2trf0B2trY2toS0mJpY2OjlpaW1nbm3rnvkkl3JskkM7/fycvMnzNnAAAYAAAAGADg3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3gMENUg==" alt="Pink Lightning Logo" class="logo">
+        <h1>Pink Lightning Softball</h1>
+        <nav>
+            <ul>
+                <li><a onclick="showSection('home')">Home</a></li>
+                <li><a onclick="showSection('tryout')">Tryout Questionnaire</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="home" class="section active">
+            <h2>Welcome to Pink Lightning!</h2>
+            <p>Join our competitive 10U girls' fastpitch softball team for players born after August 31, 2017! We focus on skill development, teamwork, and fun. Ready to try out? Click <a onclick="showSection('tryout')">tryout questionnaire</a>.</p>
+            <!-- Placeholder for team image; replace with your own -->
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAACXBIWXMAAAsTAAALEwEAmpwYAAADhklEQVR4nO3dT2sTQRzH8e+5Z6m1qIWgIti2tT6AbS/YiFUsW6ViY2trtS0s/AEi2I5iYaGllZ2trf0B2trY2toS0mJpY2OjlpaW1nbm3rnvkkl3JskkM7/fycvMnzNnAAAYAAAAGADg3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g3g
